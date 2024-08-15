@@ -16,7 +16,7 @@ let sectionTwoTl = gsap.timeline({
   scrollTrigger: {
     trigger: '.section2',
     start: 'top 20%',
-    // end: 'bottom 20%',
+    toggleActions: 'play reverse play reverse',
     // markers: true // delete later
   }
 })
@@ -46,6 +46,7 @@ let sectionThreeTl = gsap.timeline({
   scrollTrigger: {
     trigger: '.section3',
     start: 'top 20%',
+    toggleActions: 'play reverse play reverse',
     // markers: true // delete later
   }
 })
@@ -60,6 +61,7 @@ let sectionFourTl = gsap.timeline({
   scrollTrigger: {
     trigger: '.horizontal-sections4',
     start: () => "+=" + document.querySelector('.horizontal-sections').offsetWidth,
+    toggleActions: 'play reverse play reverse',
     // markers: true // delete later
   }
 })
